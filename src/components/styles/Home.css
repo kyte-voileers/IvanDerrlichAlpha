@@ -1,17 +1,18 @@
-@media only screen and (max-width: 740px) and (min-width: 400px){
-  .Home{
+@media only screen and (max-width: 740px) and (min-width: 400px) {
+  .Home {
     padding-top: 10vh;
-  }  
+    z-index: 0;
+  }
 }
 
-.home-content{
+.home-content {
   margin: 150px 0 0 250px;
   padding-right: 150px;
   padding: 100px 0 0 0;
 }
 
-@media only screen and (max-width: 740px){
-  .home-content{  
+@media only screen and (max-width: 740px) {
+  .home-content {
     margin: 100px 10px 25px 25px;
     padding-right: 40px;
     padding-left: 30px;
@@ -26,16 +27,16 @@
   font-weight: bold;
 }
 
-.call-to-action{
+.call-to-action {
   margin-top: 15px;
   text-transform: uppercase;
-  color: #7F8CFF;
+  color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
 
-.linktree{
+.linktree {
   margin-top: 20px;
   height: 20px;
   cursor: pointer;

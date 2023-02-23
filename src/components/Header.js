@@ -43,6 +43,7 @@ class Header extends React.Component {
     window.location.href = '#' + location;
   }
 
+  
 
   render() {
     return (
