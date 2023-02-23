@@ -1,5 +1,5 @@
 import './styles/Home.css';
-
+import React from 'react';
 function Home(props) {  
   return (
     <div className="Home" id="home">

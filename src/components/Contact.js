@@ -1,6 +1,6 @@
 import './styles/Contact.css';
 import emailjs from 'emailjs-com';
-
+import React from 'react';
 function Contact() {
   const { 
     REACT_APP_SERVICE_ID: serviceID,

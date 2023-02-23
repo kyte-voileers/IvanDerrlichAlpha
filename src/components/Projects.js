@@ -1,7 +1,7 @@
 import './styles/Projects.css';
 import Project from './Project'
 import data from "../data"
-
+import React from 'react';
 function Projects(props) {
   const clickHandler= props.clickHandler  
   return (    

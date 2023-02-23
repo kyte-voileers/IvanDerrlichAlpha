@@ -1,5 +1,5 @@
 import './styles/Footer.css';
-
+import React from 'react';
 function Footer(props) {
   const openNewTab = props.clickHandler;
   return (
