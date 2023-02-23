@@ -18,6 +18,10 @@
   flex-direction: row;
 }
 
+.container > div {
+  flex: 50%;
+}
+
 @media only screen and (max-width: 1050px) {
   .container {
     flex-direction: column;
@@ -34,22 +38,22 @@
   }
 }
 
-.image-container {
+.imgDiv {
   background-color: #e6e6e2;
   justify-content: center;
   border-radius: 30px;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
+  box-shadow: 0 0 20px gray;
 }
 
 .description {
   padding: 20px;
-  width: 50%;
 }
 
 @media only screen and (max-width: 1050px) {
   .description {
-    width: 100%;
     text-align: center;
   }
 }

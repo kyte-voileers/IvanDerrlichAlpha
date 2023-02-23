@@ -2,13 +2,15 @@
   .Home {
     padding-top: 10vh;
     z-index: 0;
+    height: 200vh;
+    height: 200svh;
+    display: grid;
+    place-items: center;
   }
 }
 
 .home-content {
-  margin: 150px 0 0 250px;
-  padding-right: 150px;
-  padding: 100px 0 0 0;
+ 
 }
 
 @media only screen and (max-width: 740px) {
