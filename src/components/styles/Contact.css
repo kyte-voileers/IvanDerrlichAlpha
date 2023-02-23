@@ -1,0 +1,57 @@
+.Contact{
+  margin-left: 3vw;
+  display: flex ;
+  align-items: center;
+  flex-direction: column;
+  background-color:  #7f8cff;
+  color:#252525;
+  margin-top: 10vh;
+}
+
+.contact-title{
+  font-size: 30px;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  font-weight: bold; 
+  margin-top: 50px; 
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 80vw
+}
+
+@media only screen and (max-width: 740px){
+  .form{
+    width:80vw;
+  }
+}
+
+label{
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.send-button{
+  margin-top: 30px;
+  background-color: #bbccbc; /* Green */
+  border: none;
+  color:#252525;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.message{
+  height: 70px;  
+}
+
+.name, .email{
+  height: 40px;
+}

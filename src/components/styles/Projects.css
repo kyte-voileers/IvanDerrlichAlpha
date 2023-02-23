@@ -1,0 +1,129 @@
+.Projects{
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 14vh;
+}
+
+@media only screen and (max-width: 740px){
+  .Projects{
+    margin: 0 10px;
+  }  
+} 
+
+.container{
+  display: flex;
+  margin: 200px 0;  
+  align-items: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1050px){
+  .container{
+    flex-direction: column;
+  }
+}
+
+.reverse{
+  order:-1;
+}
+
+@media only screen and (max-width: 1050px){
+  .reverse{
+    order:1;
+  }
+}
+
+.image-container{
+  background-color: #E6E6E2;  
+  justify-content: center;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;  
+}
+
+.description{
+  padding: 20px;  
+  width:50%;
+}
+
+@media only screen and (max-width: 1050px){
+  .description{
+    width:100%;
+    text-align: center;
+  }
+}
+
+.title{
+  color: #091E42;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;  
+  display: block;
+}
+
+.text{
+  margin-top: 30px;
+  color: #344563;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.tags{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 0;
+}
+@media only screen and (max-width: 1050px){
+  .tags{
+    justify-content: center;
+  }
+}
+
+.tags>div, .tags>li{
+  margin: 0 8px;  
+  padding: 3px 12px;
+  background-color: #EBEBFF;
+  border-radius: 10px;
+  list-style-type: none;  
+}
+
+.link{
+  margin-top: 20px;
+  margin-right: 20px;
+  color:#396DF2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid #396DF2;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 740px){
+  .link{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px
+  }
+}
+
+.more-container{
+  display: flex;
+  justify-content: center;
+}
+
+.more{  
+  margin-bottom: 10%;
+  font-size: 40px;
+  width: 400px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}

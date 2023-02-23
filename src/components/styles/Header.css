@@ -1,0 +1,120 @@
+.Header {
+  background-color: white;
+  color: #6070FF;
+  height: 9vh;
+  width: 100vw;
+  position: fixed;  
+  top:0;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px 1px grey;    
+}
+
+@media only screen and (max-width: 740px) and (min-width: 400px){
+  .Header{
+    height: 10vh;
+  }  
+}
+
+@media only screen and (min-width: 740px){
+  .Header{
+    height: 10vh;
+    padding: 0 120px;
+  }  
+}
+
+nav{  
+  width: 92vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  margin-top: 2vh;
+  font-size: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 740px){
+  .hamburger{
+    display: none;
+  }
+}
+
+.home-desktop-link{
+  font-size: 18px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: bold;  
+  cursor: pointer;
+  color: #3642ab;
+}
+
+@media only screen and (max-width: 740px){
+  .home-desktop-link{
+    font-size: 18px;
+    margin-left: 40px;
+  }
+}
+
+.about-desktop-link, .contact-desktop-link, .portfolio-desktop-link {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 740px){
+  .about-desktop-link, .contact-desktop-link, .portfolio-desktop-link {
+    display: none;
+  }
+}
+
+.blue-screen{
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(194, 194, 241);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;  
+  box-sizing: border-box;
+  background: #6070ffcc;
+  z-index: 1;
+}
+
+.hidden {
+  display: none
+}
+
+.blue-link{
+  display: block;
+  margin-bottom: 6vh;
+}
+
+.blue-links{
+  margin-top: 15vw;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.cross{
+  margin-right: 58px;
+  margin-top:22px;
+  font-size: 30px; 
+  cursor: pointer; 
+}

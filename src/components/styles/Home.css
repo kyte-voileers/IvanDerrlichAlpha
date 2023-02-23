@@ -1,0 +1,42 @@
+@media only screen and (max-width: 740px) and (min-width: 400px){
+  .Home{
+    padding-top: 10vh;
+  }  
+}
+
+.home-content{
+  margin: 150px 0 0 250px;
+  padding-right: 150px;
+  padding: 100px 0 0 0;
+}
+
+@media only screen and (max-width: 740px){
+  .home-content{  
+    margin: 100px 10px 25px 25px;
+    padding-right: 40px;
+    padding-left: 30px;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+  font-weight: bold;
+}
+
+.call-to-action{
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: #7F8CFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.linktree{
+  margin-top: 20px;
+  height: 20px;
+  cursor: pointer;
+}
