@@ -1,16 +1,16 @@
-@media only screen and (max-width: 740px) and (min-width: 400px) {
-  .Home {
-    padding-top: 10vh;
-    z-index: 0;
-    height: 200vh;
-    height: 200svh;
-    display: grid;
-    place-items: center;
-  }
+.Home {
+  padding-top: 10vh;
+  z-index: 0;
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  place-items: center;
 }
 
 .home-content {
- 
+  margin: 100px 10px 25px 25px;
+  padding-right: 40px;
+  padding-left: 30px;
 }
 
 @media only screen and (max-width: 740px) {

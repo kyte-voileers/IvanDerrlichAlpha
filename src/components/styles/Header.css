@@ -8,7 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 10px 1px grey;    
+  box-shadow: 1px 1px 10px 1px grey;  
+  z-index: 900;  
 }
 
 @media only screen and (max-width: 740px) and (min-width: 400px){
