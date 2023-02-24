@@ -7,25 +7,22 @@ function Projects(props) {
 
   const ref = React.useRef(null);
   useEffect(() => {
+    let elementsArray = document.querySelectorAll('.outView');
 
-    let elementsArray = document.querySelectorAll(".fade");
-console.log(elementsArray);
-window.addEventListener('scroll', fadeIn ); 
-function fadeIn() {
-    for (var i = 0; i < elementsArray.length; i++) {
-        var elem = elementsArray[i]
-        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+    window.addEventListener('scroll', fadeIn);
+    function fadeIn() {
+      for (var i = 0; i < elementsArray.length; i++) {
+        var elem = elementsArray[i];
+        var distInView =
+          elem.getBoundingClientRect().top - window.innerHeight + 20;
         if (distInView < 0) {
-            elem.classList.remove("outView");
-        } 
-
+          elem.classList.remove('outView');
+          elementsArray = document.querySelectorAll('.outView');
+        }
+      }
     }
-}
-fadeIn();
+    fadeIn();
   });
-
-
-
 
   return (
     <div className="Projects" id="projects">
