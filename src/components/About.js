@@ -78,7 +78,7 @@ class About extends React.Component {
   render() {
     return (
       <div className="About" id="about">
-        <div className="myself">
+        <div className="myself faders outView">
           <div>
             <div className="title">About me</div>
             <p className="text">

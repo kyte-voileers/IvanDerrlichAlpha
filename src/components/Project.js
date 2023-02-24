@@ -71,7 +71,7 @@ const Project = ({ clickHandler, properties }) => {
 
   return (
     <div className="container">
-      <div className="imgDiv outView">
+      <div className="imgDiv faders outView">
         <img src={imageURL} alt={'Project'} />
       </div>
       <div className={`description ${textLeft ? 'reverse' : ''}`}>

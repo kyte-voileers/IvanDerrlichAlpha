@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -27,6 +27,28 @@ const clickHandler = (url) => {
 };
 
 function App() {
+  const ref = React.useRef(null);
+  useEffect(() => {
+    let elementsArray = document.querySelectorAll('.outView');
+
+    window.addEventListener('scroll', fadeIn);
+    function fadeIn() {
+      for (var i = 0; i < elementsArray.length; i++) {
+        var elem = elementsArray[i];
+        var distInView =
+          elem.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+          elem.classList.remove('outView');
+          elementsArray = document.querySelectorAll('.outView');
+          console.log(elementsArray);
+        }
+      }
+      if (elementsArray.length == 0) {
+        window.removeEventListener('scroll', fadeIn);
+      }
+    }
+    fadeIn();
+  });
   return (
     <div className="App">
       <Header clickHandler={newTabClick} />

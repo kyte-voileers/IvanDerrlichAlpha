@@ -1,31 +1,11 @@
 import './styles/Projects.css';
 import Project from './Project';
 import data from '../data';
-import React, { useEffect } from 'react';
+import React from 'react';
 function Projects(props) {
   const clickHandler = props.clickHandler;
 
-  const ref = React.useRef(null);
-  useEffect(() => {
-    let elementsArray = document.querySelectorAll('.outView');
 
-    window.addEventListener('scroll', fadeIn);
-    function fadeIn() {
-      for (var i = 0; i < elementsArray.length; i++) {
-        var elem = elementsArray[i];
-        var distInView =
-          elem.getBoundingClientRect().top - window.innerHeight + 20;
-        if (distInView < 0) {
-          elem.classList.remove('outView');
-          elementsArray = document.querySelectorAll('.outView');
-          console.log(elementsArray);
-        }
-      }
-      if (elementsArray.length == 0) {
-        window.removeEventListener('scroll', fadeIn);}
-    }
-    fadeIn();
-  });
 
   return (
     <div className="Projects" id="projects">
