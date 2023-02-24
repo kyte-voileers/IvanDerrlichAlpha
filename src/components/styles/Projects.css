@@ -4,15 +4,15 @@
   background-color: hsl(206, 95%, 77%);
   z-index: 5;
   position: relative;
-  padding-top: 9vh;
+  margin-top: -5vh;
 }
 
 .Projects::after {
   content: '';
   position: absolute;
   width: 49.2%;
-  height: 10vh;
-  top: -8vh;
+  height: 15vh;
+  top: -12vh;
   left: 0;
   background-color: hsl(206, 95%, 77%);
   border-radius: 0% 100% 0% 00%;
