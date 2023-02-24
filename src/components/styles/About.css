@@ -116,6 +116,9 @@
   display: none;
 }
 
-[aria-hidden='true'] {
-  display: none;
+.languages-content .hide,
+.frameworks-content .hide,
+.skills-content .hide {
+  opacity: 0;
+  transform: scaleY(0);
 }

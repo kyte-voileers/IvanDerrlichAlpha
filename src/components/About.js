@@ -22,17 +22,40 @@ class About extends React.Component {
         const arrowRightLanguages = document.querySelector(
           '#arrow-right-languages'
         );
-        const arrowDownLanguages = document.querySelector(
-          '#arrow-down-languages'
-        );
+
         const languagesContent = document.querySelector('#languages-content');
         if (arrowRightLanguages.classList.contains('hide')) {
           arrowRightLanguages.classList.remove('hide');
-          arrowDownLanguages.classList.add('hide');
+          arrowRightLanguages.animate(
+            [
+              // keyframes
+              { transform: 'rotate(90deg)' },
+              { transform: 'rotate(0deg)' },
+            ],
+            {
+              // timing options
+              duration: 200,
+              iterations: 1,
+              fill: 'forwards',
+            }
+          );
+
           languagesContent.classList.add('hide');
         } else {
           arrowRightLanguages.classList.add('hide');
-          arrowDownLanguages.classList.remove('hide');
+          arrowRightLanguages.animate(
+            [
+              // keyframes
+              { transform: 'rotate(0deg)' },
+              { transform: 'rotate(90deg)' },
+            ],
+            {
+              // timing options
+              duration: 200,
+              iterations: 1,
+              fill: 'forwards',
+            }
+          );
           languagesContent.classList.remove('hide');
         }
         break;
@@ -64,16 +87,26 @@ class About extends React.Component {
           arrowRightSkills.classList.remove('hide');
           arrowDownSkills.classList.add('hide');
           skillsContent.classList.add('hide');
-          arrowRightSkills.setAttribute("aria-hidden", true)
-          arrowDownSkills.setAttribute("aria-hidden", false)
-          skillsContent.setAttribute("aria-hidden", false)
+
+          
+          arrowDownSkills.setAttribute('aria-hidden', true);
+          skillsContent.setAttribute('aria-hidden', true);
+
+          arrowRightSkills.style.display = '';
+          arrowDownSkills.style.display = 'none';
+          skillsContent.style.display = 'none';
         } else {
           arrowRightSkills.classList.add('hide');
           arrowDownSkills.classList.remove('hide');
           skillsContent.classList.remove('hide');
-          arrowRightSkills.setAttribute("aria-hidden", false)
-          arrowDownSkills.setAttribute("aria-hidden", true)
-          skillsContent.setAttribute("aria-hidden", true)
+
+         
+          arrowDownSkills.setAttribute('aria-hidden', false);
+          skillsContent.setAttribute('aria-hidden', false);
+
+          arrowRightSkills.style.display = 'none';
+          arrowDownSkills.style.display = '';
+          skillsContent.style.display = '';
         }
         break;
       default:
@@ -112,10 +145,6 @@ class About extends React.Component {
               <i
                 id="arrow-right-languages"
                 className="fas fa-chevron-right"
-              ></i>
-              <i
-                id="arrow-down-languages"
-                className="fas fa-chevron-down hide"
               ></i>
             </div>
             <div id="languages-content" className="languages-content hide">
@@ -163,10 +192,7 @@ class About extends React.Component {
                 id="arrow-right-frameworks"
                 className="fas fa-chevron-right"
               ></i>
-              <i
-                id="arrow-down-frameworks"
-                className="fas fa-chevron-down hide"
-              ></i>
+      
             </div>
             <div id="frameworks-content" className="frameworks-content hide">
               <div className="skills-item">
@@ -205,6 +231,7 @@ class About extends React.Component {
               <i
                 id="arrow-down-skills"
                 className="fas fa-chevron-down hide"
+                style={{ display: 'none' }}
               ></i>
             </div>
             <div id="skills-content" className="skills-content hide">
