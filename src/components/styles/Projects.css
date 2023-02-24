@@ -9,17 +9,22 @@
 .Projects::before {
   content: '';
   position: absolute;
-  width: 100vw;
-  height: 20vh;
-  top: -20vh;
+  width: 50svw;
+  height: 10vh;
+  top: -10vh;
   left: 0;
   background-color: hsl(206, 95%, 77%);
-  --mask: radial-gradient(1.1vw at 50% 1.45vw, #000 99%, #0000 101%)
-      calc(50% - 2vw) 0/4vw 100%,
-    radial-gradient(1.1vw at 50% -0.45vw, #0000 99%, #000 101%) 50% 1vw/4vw 100%
-      repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+  border-radius: 0% 100% 0% 00%;
+}
+.Projects::after {
+  content: '';
+  position: absolute;
+  width: 50svw;
+  height: 10vh;
+  top: 0;
+  right: 0vw;
+  background-color: gray;
+  border-radius: 0% 0% 0% 100%;
 }
 
 @media only screen and (max-width: 740px) {
