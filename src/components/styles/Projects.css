@@ -175,16 +175,3 @@
   padding-top: 35px;
 }
 
-.outView {
-  height: 400px;
-  margin-top: 40px;
-
-  -webkit-transform: translateY(30px);
-  transform: translateY(30px);
-  opacity: 0;
-}
-
-.faders {
-  transition-delay: 200ms;
-  transition: all 500ms ease-out;
-}

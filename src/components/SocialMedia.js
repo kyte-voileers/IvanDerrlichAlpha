@@ -9,7 +9,7 @@ function SocialMedia({clickHandler}) {
             <div className={`title ${styles.title}`}>Let's connect:</div>
             <div className={styles.grid}>
                 <div 
-                    className={styles.button}
+                    className={styles.button  "faders outView"}
                     onClick={()=> clickHandler('https://github.com/ivanderlich')}
                     onAuxClick={()=> clickHandler('https://github.com/ivanderlich')}
                 >
@@ -17,7 +17,7 @@ function SocialMedia({clickHandler}) {
                     <div className={styles.siteName}>GitHub</div>                    
                 </div>
                 <div 
-                    className={styles.button}
+                    className={styles.button " faders outView delay-1"}
                     onClick={()=> clickHandler('https://www.linkedin.com/in/ivanderlich/')}
                     onAuxClick={()=> clickHandler('https://www.linkedin.com/in/ivanderlich/')}
                 >
