@@ -68,9 +68,10 @@ const Project = ({ clickHandler, properties }) => {
     });
 
   const openNewTab = clickHandler;
+
   return (
     <div className="container">
-      <div className="imgDiv">
+      <div className="imgDiv outView">
         <img src={imageURL} alt={'Project'} />
       </div>
       <div className={`description ${textLeft ? 'reverse' : ''}`}>
