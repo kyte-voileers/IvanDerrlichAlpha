@@ -9,7 +9,7 @@
 .Projects::before {
   content: '';
   position: absolute;
-  width: 50svw;
+  width: 50%;
   height: 10vh;
   top: -10vh;
   left: 0;
@@ -19,7 +19,7 @@
 .Projects::after {
   content: '';
   position: absolute;
-  width: 50svw;
+  width: 50%;
   height: 10vh;
   top: 0;
   right: 0vw;
