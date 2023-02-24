@@ -8,14 +8,14 @@
 }
 
 .home-content {
-  margin: 100px 10px 25px 25px;
+  
   padding-right: 40px;
   padding-left: 30px;
 }
 
 @media only screen and (max-width: 740px) {
   .home-content {
-    margin: 100px 10px 25px 25px;
+   
     padding-right: 40px;
     padding-left: 30px;
     text-align: center;

@@ -4,7 +4,7 @@
   background-color: hsl(206, 95%, 77%);
   z-index: 5;
   position: relative;
-  padding-top:9vh;
+  padding-top: 9vh;
 }
 
 .Projects::after {
@@ -79,15 +79,14 @@
 
 .imgDiv {
   display: grid;
-  place-items:center;
+  place-items: center;
   overflow: hidden;
-  box-shadow: 0 0 20px gray;
 }
 
 .imgDiv > img {
   width: 90%;
   padding: 10px;
-  margin:auto;
+  margin: auto;
 }
 
 .description {
