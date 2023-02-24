@@ -125,10 +125,6 @@ class About extends React.Component {
           );
 
           skillsContent.classList.add('hide');
-
-          
-
-
         } else {
           arrowRightSkills.classList.add('hide');
           arrowRightSkills.animate(
@@ -145,7 +141,6 @@ class About extends React.Component {
             }
           );
           skillsContent.classList.remove('hide');
-
         }
         break;
       default:
@@ -231,7 +226,6 @@ class About extends React.Component {
                 id="arrow-right-frameworks"
                 className="fas fa-chevron-right"
               ></i>
-      
             </div>
             <div id="frameworks-content" className="frameworks-content hide">
               <div className="skills-item">
