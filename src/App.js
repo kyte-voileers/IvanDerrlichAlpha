@@ -36,7 +36,7 @@ function App() {
       for (var i = 0; i < elementsArray.length; i++) {
         var elem = elementsArray[i];
         var distInView =
-          elem.getBoundingClientRect().top - window.innerHeight + 20;
+          elem.getBoundingClientRect().top - window.innerHeight + 80;
         if (distInView < 0) {
           elem.classList.remove('outView');
           elementsArray = document.querySelectorAll('.outView');
