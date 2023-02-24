@@ -64,10 +64,16 @@ class About extends React.Component {
           arrowRightSkills.classList.remove('hide');
           arrowDownSkills.classList.add('hide');
           skillsContent.classList.add('hide');
+          arrowRightSkills.setAttribute("aria-hidden", true)
+          arrowDownSkills.setAttribute("aria-hidden", false)
+          skillsContent.setAttribute("aria-hidden", false)
         } else {
           arrowRightSkills.classList.add('hide');
           arrowDownSkills.classList.remove('hide');
           skillsContent.classList.remove('hide');
+          arrowRightSkills.setAttribute("aria-hidden", false)
+          arrowDownSkills.setAttribute("aria-hidden", true)
+          skillsContent.setAttribute("aria-hidden", true)
         }
         break;
       default:
