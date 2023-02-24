@@ -24,7 +24,7 @@ body {
 
 .faders {
   transition-delay: 200ms;
-  transition: all 500ms ease-out;
+  transition: all 500ms ease-in-out;
 }
 
 .delay-1 {
@@ -53,5 +53,3 @@ body {
 .delay-7 {
   transition-delay: 720ms;
 }
-
-
