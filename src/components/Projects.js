@@ -21,6 +21,8 @@ function Projects(props) {
           console.log(elementsArray);
         }
       }
+      if (elementsArray.length == 0) {
+        window.removeEventListener('scroll', fadeIn);}
     }
     fadeIn();
   });
