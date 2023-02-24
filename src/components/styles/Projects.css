@@ -23,7 +23,7 @@
   height: 10vh;
   top: 0;
   right: 0vw;
-  background-color: gray;
+  background-color: white;
   border-radius: 0% 0% 0% 100%;
 }
 
@@ -35,9 +35,10 @@
 
 .container {
   display: flex;
-  margin: 200px 0;
+  max-width:900px;
   align-items: center;
   flex-direction: row;
+  margin:auto;
 }
 
 .container > div {
@@ -61,9 +62,9 @@
 }
 
 .imgDiv {
-  background-color: #e6e6e2;
+  
   justify-content: center;
-  border-radius: 30px;
+
   display: flex;
   justify-content: space-around;
   overflow: hidden;
