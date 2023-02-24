@@ -18,6 +18,7 @@ function Projects(props) {
         if (distInView < 0) {
           elem.classList.remove('outView');
           elementsArray = document.querySelectorAll('.outView');
+          console.log(elementsArray);
         }
       }
     }
