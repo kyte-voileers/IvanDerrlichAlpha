@@ -70,11 +70,36 @@ class About extends React.Component {
 
         if (arrowRightFrameworks.classList.contains('hide')) {
           arrowRightFrameworks.classList.remove('hide');
-          arrowDownFrameworks.classList.add('hide');
+          arrowRightFrameworks.animate(
+            [
+              // keyframes
+              { transform: 'rotate(90deg)' },
+              { transform: 'rotate(0deg)' },
+            ],
+            {
+              // timing options
+              duration: 200,
+              iterations: 1,
+              fill: 'forwards',
+            }
+          );
+
           frameworkContent.classList.add('hide');
         } else {
           arrowRightFrameworks.classList.add('hide');
-          arrowDownFrameworks.classList.remove('hide');
+          arrowRightFrameworks.animate(
+            [
+              // keyframes
+              { transform: 'rotate(0deg)' },
+              { transform: 'rotate(90deg)' },
+            ],
+            {
+              // timing options
+              duration: 200,
+              iterations: 1,
+              fill: 'forwards',
+            }
+          );
           frameworkContent.classList.remove('hide');
         }
         break;
@@ -85,28 +110,42 @@ class About extends React.Component {
 
         if (arrowRightSkills.classList.contains('hide')) {
           arrowRightSkills.classList.remove('hide');
-          arrowDownSkills.classList.add('hide');
+          arrowRightSkills.animate(
+            [
+              // keyframes
+              { transform: 'rotate(90deg)' },
+              { transform: 'rotate(0deg)' },
+            ],
+            {
+              // timing options
+              duration: 200,
+              iterations: 1,
+              fill: 'forwards',
+            }
+          );
+
           skillsContent.classList.add('hide');
 
           
-          arrowDownSkills.setAttribute('aria-hidden', true);
-          skillsContent.setAttribute('aria-hidden', true);
 
-          arrowRightSkills.style.display = '';
-          arrowDownSkills.style.display = 'none';
-          skillsContent.style.display = 'none';
+
         } else {
           arrowRightSkills.classList.add('hide');
-          arrowDownSkills.classList.remove('hide');
+          arrowRightSkills.animate(
+            [
+              // keyframes
+              { transform: 'rotate(0deg)' },
+              { transform: 'rotate(90deg)' },
+            ],
+            {
+              // timing options
+              duration: 200,
+              iterations: 1,
+              fill: 'forwards',
+            }
+          );
           skillsContent.classList.remove('hide');
 
-         
-          arrowDownSkills.setAttribute('aria-hidden', false);
-          skillsContent.setAttribute('aria-hidden', false);
-
-          arrowRightSkills.style.display = 'none';
-          arrowDownSkills.style.display = '';
-          skillsContent.style.display = '';
         }
         break;
       default:
