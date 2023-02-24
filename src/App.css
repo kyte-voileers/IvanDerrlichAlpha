@@ -14,8 +14,6 @@ body {
 }
 
 .outView {
-  height: 400px;
-  margin-top: 40px;
 
   -webkit-transform: translateY(30px);
   transform: translateY(30px);

@@ -2,11 +2,11 @@ import styles from './styles/SocialMedia.module.scss';
 import React from 'react';
 function SocialMedia({ clickHandler }) {
   return (
-    <div className={styles.container} id="social-media">
+    <div className={`${styles.container} faders outView`} id="social-media">
       <div className={`title ${styles.title}`}>Let's connect:</div>
       <div className={styles.grid}>
         <div
-          className={`${styles.button}  faders outView`}
+          className={`${styles.button}`}
           onClick={() => clickHandler('https://github.com/ivanderlich')}
           onAuxClick={() => clickHandler('https://github.com/ivanderlich')}
         >
@@ -14,7 +14,7 @@ function SocialMedia({ clickHandler }) {
           <div className={styles.siteName}>GitHub</div>
         </div>
         <div
-          className={`${styles.button}  faders outView delay-1`}
+          className={`${styles.button} `}
           onClick={() =>
             clickHandler('https://www.linkedin.com/in/ivanderlich/')
           }
@@ -26,7 +26,7 @@ function SocialMedia({ clickHandler }) {
           <div className={styles.siteName}>Linkedin</div>
         </div>
         <div
-          className={`${styles.button}  faders outView delay-2`}
+          className={`${styles.button}`}
           onClick={() =>
             clickHandler('https://stackoverflow.com/users/4363972')
           }
@@ -38,7 +38,7 @@ function SocialMedia({ clickHandler }) {
           <div className={styles.siteName}>StackOverflow</div>
         </div>
         <div
-          className={`${styles.button}  faders outView delay-3`}
+          className={`${styles.button}`}
           onClick={() => clickHandler('https://blog.ivanderlich.com')}
           onAuxClick={() => clickHandler('https://blog.ivanderlich.com')}
         >
@@ -46,7 +46,7 @@ function SocialMedia({ clickHandler }) {
           <div className={styles.siteName}>Blog</div>
         </div>
         <div
-          className={`${styles.button}  faders outView delay-4`}
+          className={`${styles.button}`}
           onClick={() => clickHandler('https://twitter.com/IvanDerlich')}
           onAuxClick={() => clickHandler('https://twitter.com/IvanDerlich')}
         >
@@ -54,7 +54,7 @@ function SocialMedia({ clickHandler }) {
           <div className={styles.siteName}>Twitter</div>
         </div>
         <div
-          className={`${styles.button}  faders outView delay-5`}
+          className={`${styles.button}`}
           onClick={() => clickHandler('https://ivanderlich.medium.com/')}
           onAuxClick={() => clickHandler('https://ivanderlich.medium.com/')}
         >
@@ -62,7 +62,7 @@ function SocialMedia({ clickHandler }) {
           <div className={styles.siteName}>Medium</div>
         </div>
         <div
-          className={`${styles.button}  faders outView delay-6`}
+          className={`${styles.button}`}
           onClick={() =>
             clickHandler(
               'https://www.youtube.com/channel/UCZYxGdqKsS4HNwT1e9OV8YQ'

@@ -3,7 +3,7 @@ import styles from './styles/UsefulLinks.module.scss';
 import React from 'react';
 function UsefulLinks({ clickHandler }) {
   return (
-    <div className={socialMediaStyles.container} id="useful-links">
+    <div className= {`${socialMediaStyles.container}  faders outView`} id="useful-links">
       <div className={`title ${socialMediaStyles.title}`}>Useful Links:</div>
       <div className={socialMediaStyles.grid}>
         <div
@@ -19,7 +19,7 @@ function UsefulLinks({ clickHandler }) {
             )
           }
         >
-          <div className={`${socialMediaStyles.logo} ${styles.resume} faders outView`} />
+          <div className={`${socialMediaStyles.logo} ${styles.resume}`} />
           <div className={socialMediaStyles.siteName}>Resume</div>
         </div>
         <div
@@ -27,7 +27,7 @@ function UsefulLinks({ clickHandler }) {
           onClick={() => clickHandler('mailto:email@example.com')}
           onAuxClick={() => clickHandler('mailto:email@example.com')}
         >
-          <div className={`${socialMediaStyles.logo} ${styles.email} faders outView delay-1`} />
+          <div className={`${socialMediaStyles.logo} ${styles.email}`} />
           <div className={socialMediaStyles.siteName}>Email</div>
         </div>
         <div
@@ -44,7 +44,7 @@ function UsefulLinks({ clickHandler }) {
           }
         >
           <div
-            className={`${socialMediaStyles.logo} ${styles.certifications}  faders outView delay-2`}
+            className={`${socialMediaStyles.logo} ${styles.certifications}`}
           />
           <div className={socialMediaStyles.siteName}>Certifications</div>
         </div>
