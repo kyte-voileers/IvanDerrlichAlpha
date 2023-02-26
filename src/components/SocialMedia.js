@@ -1,4 +1,4 @@
-import styles from './styles/SocialMedia.module.css';
+
 import React from 'react';
 function SocialMedia({ clickHandler }) {
   return (

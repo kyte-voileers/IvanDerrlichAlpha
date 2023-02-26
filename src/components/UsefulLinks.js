@@ -1,16 +1,12 @@
-import socialMediaStyles from './styles/SocialMedia.module.css';
 import styles from './styles/UsefulLinks.module.css';
 import React from 'react';
 function UsefulLinks({ clickHandler }) {
   return (
-    <div
-      className={`${socialMediaStyles.container}  faders outView`}
-      id="useful-links"
-    >
-      <div className={`title ${socialMediaStyles.title}`}>Useful Links:</div>
-      <div className={socialMediaStyles.grid}>
+    <div className={`container  faders outView`} id="useful-links">
+      <div className={`title ${styles.title}`}>Useful Links:</div>
+      <div className={styles.grid}>
         <div
-          className={socialMediaStyles.button}
+          className={styles.button}
           onClick={() =>
             clickHandler(
               'https://docs.google.com/document/d/1lrhSStY2TPPkS6f9qoiwWPSaCV17LJR26hgureLlcdA'
@@ -22,19 +18,19 @@ function UsefulLinks({ clickHandler }) {
             )
           }
         >
-          <div className={`${socialMediaStyles.logo} ${styles.resume}`} />
-          <div className={socialMediaStyles.siteName}>Resume</div>
+          <div className={`${styles.logo} ${styles.resume}`} />
+          <div className={styles.siteName}>Resume</div>
         </div>
         <div
-          className={socialMediaStyles.button}
+          className={styles.button}
           onClick={() => clickHandler('mailto:email@example.com')}
           onAuxClick={() => clickHandler('mailto:email@example.com')}
         >
-          <div className={`${socialMediaStyles.logo} ${styles.email}`} />
-          <div className={socialMediaStyles.siteName}>Email</div>
+          <div className={`${styles.logo} ${styles.email}`} />
+          <div className={styles.siteName}>Email</div>
         </div>
         <div
-          className={socialMediaStyles.button}
+          className={styles.button}
           onClick={() =>
             clickHandler(
               'https://www.credential.net/profile/ivanalejandroderlichderlich65413'
@@ -46,10 +42,8 @@ function UsefulLinks({ clickHandler }) {
             )
           }
         >
-          <div
-            className={`${socialMediaStyles.logo} ${styles.certifications}`}
-          />
-          <div className={socialMediaStyles.siteName}>Certifications</div>
+          <div className={`${styles.logo} ${styles.certifications}`} />
+          <div className={styles.siteName}>Certifications</div>
         </div>
       </div>
     </div>
