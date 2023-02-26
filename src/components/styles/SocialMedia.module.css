@@ -1,0 +1,75 @@
+.container {
+    padding-top: 10vh;
+  }
+  @media (max-width: 800px) {
+    .container {
+      margin: 0 0 0 0;
+    }
+  }
+  
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3vh;
+  }
+  .grid :hover {
+    cursor: pointer;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+    height: 50px;
+  }
+  
+  .logo {
+    color: yellow;
+    height: 100%;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .siteName {
+    color: #091E42;
+    line-height: 50px;
+    margin: 0 1vw;
+  }
+  
+  .linkedInLogo {
+    background-image: url("../../media/socialMedia/linkedin.png");
+  }
+  
+  .stackoverflowLogo {
+    background-image: url("../../media/socialMedia/stackoverflow.png");
+  }
+  
+  .blog {
+    background-image: url("../../media/socialMedia/blog.png");
+  }
+  
+  .twitter {
+    background-image: url("../../media/socialMedia/twitter.png");
+  }
+  
+  .medium {
+    background-image: url("../../media/socialMedia/medium.png");
+  }
+  
+  .github {
+    background-image: url("../../media/socialMedia/github.png");
+  }
+  
+  .youtube {
+    background-image: url("../../media/socialMedia/youtube.png");
+  }

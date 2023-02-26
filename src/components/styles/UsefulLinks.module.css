@@ -1,0 +1,12 @@
+.resume {
+    background-image: url("../../media/usefulLinks/resume.png");
+    background-position: 7px 0px;
+  }
+  
+  .email {
+    background-image: url("../../media/usefulLinks/e-mail.png");
+  }
+  
+  .certifications {
+    background-image: url("../../media/usefulLinks/certifications.png");
+  }

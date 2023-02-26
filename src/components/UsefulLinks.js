@@ -1,9 +1,12 @@
-import socialMediaStyles from './styles/SocialMedia.module.scss';
-import styles from './styles/UsefulLinks.module.scss';
+import socialMediaStyles from './styles/SocialMedia.module.css';
+import styles from './styles/UsefulLinks.module.css';
 import React from 'react';
 function UsefulLinks({ clickHandler }) {
   return (
-    <div className= {`${socialMediaStyles.container}  faders outView`} id="useful-links">
+    <div
+      className={`${socialMediaStyles.container}  faders outView`}
+      id="useful-links"
+    >
       <div className={`title ${socialMediaStyles.title}`}>Useful Links:</div>
       <div className={socialMediaStyles.grid}>
         <div
