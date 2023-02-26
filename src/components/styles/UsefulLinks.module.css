@@ -1,12 +1,40 @@
 .resume {
-    background-image: url("../../media/usefulLinks/resume.png");
-    background-position: 7px 0px;
-  }
-  
-  .email {
-    background-image: url("../../media/usefulLinks/e-mail.png");
-  }
-  
-  .certifications {
-    background-image: url("../../media/usefulLinks/certifications.png");
-  }
+  background-image: url('../../media/usefulLinks/resume.png');
+  background-position: 7px 0px;
+}
+
+.email {
+  background-image: url('../../media/usefulLinks/e-mail.png');
+}
+
+.certifications {
+  background-image: url('../../media/usefulLinks/certifications.png');
+}
+
+.linkedInLogo {
+  background-image: url('../../media/socialMedia/linkedin.png');
+}
+
+.stackoverflowLogo {
+  background-image: url('../../media/socialMedia/stackoverflow.png');
+}
+
+.blog {
+  background-image: url('../../media/socialMedia/blog.png');
+}
+
+.twitter {
+  background-image: url('../../media/socialMedia/twitter.png');
+}
+
+.medium {
+  background-image: url('../../media/socialMedia/medium.png');
+}
+
+.github {
+  background-image: url('../../media/socialMedia/github.png');
+}
+
+.youtube {
+  background-image: url('../../media/socialMedia/youtube.png');
+}
