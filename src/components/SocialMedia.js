@@ -1,4 +1,5 @@
 
+import styles from './styles/UsefulLinks.module.css';
 import React from 'react';
 function SocialMedia({ clickHandler }) {
   return (
