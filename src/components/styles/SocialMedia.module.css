@@ -2,12 +2,6 @@
   padding-top: 10vh;
 }
 
-@media (max-width: 800px) {
-  .container {
-    margin: 0 0 0 0;
-  }
-}
-
 .title {
   font-size: 2rem;
   text-align: center;
@@ -33,7 +27,7 @@
 
 .logo {
   color: yellow;
-  height: 100%;
+
   border-radius: 10px;
   height: 50px;
   width: 50px;
